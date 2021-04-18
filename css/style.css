@@ -1,0 +1,248 @@
+body {
+    min-width: 400px;
+    max-width: 1600px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    overflow: auto;
+    background-image: url("../img/about-company-bcg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nothing {
+    margin-top: 10%;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+.input-error {
+    color: #e52b2b;
+    border-color: #e52b2b;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.card {
+    width: 354px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #0d6efd;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.card-title {
+    font-weight: bold;
+}
+.icons {
+    justify-self: flex-end;
+    margin-right: 8px;
+    width: 23px;
+    height: 23px;
+}
+.dropdown-item, .icons{
+    cursor: pointer;
+}
+.log-error {
+    background-color: #cc0000;
+    color: #fff;
+    margin: 0;
+    padding: 19px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+.modal-create {
+    padding: 5px 20px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+.modal {
+    display: block;
+    background-color: rgba(0, 0, 0, .3);
+}
+.modal-header {
+    padding: 10px 4px;
+}
+.modal-header .btn-close {
+    transform: translateY(1.5px);
+}
+.modal-body {
+    width: 360px;
+}
+.modal-content-wrapper {
+    margin-bottom: 5px;
+}
+.form-input:not(:last-child) {
+    margin-bottom: 10px;
+}
+.modal-item-desc {
+    font-size: 15px;
+    margin-left: 10px;
+}
+.modal-textarea {
+    max-height: 200px;
+}
+.modal-area {
+    height: auto;
+}
+
+.list-group-item {
+    text-align: left;
+}
+.navbar {
+    padding: 0;
+}
+.filter-search {
+    background-image: url("../img/icon-search.png");
+    background-repeat: no-repeat;
+    background-size: auto 70%;
+    background-position: left;
+    vertical-align: top;
+    justify-content: center;
+    width: 100%;
+    height: 38px;
+    border: 1px solid #0d6efd;
+    border-radius: 5px;
+    text-align: center;
+    margin: 24px 20px 0 0;
+}
+.filter-select {
+    height: 38px;
+    width: 300px;
+    border: 1px solid #0d6efd;
+    border: 1px solid lightseagreen;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: top;
+    padding: 0 10px;
+    margin-right: 20px;
+}
+.btn {
+    margin-top: 14px;
+}
+#logIn,
+#addCard {
+    width: 160px;
+}
+#search {
+    width: 160px;
+    margin-top: 24px;
+}
+.container,
+.container-filter--select-all {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0
+}
+.container img {
+    height: 100px;
+}
+.container-filter,
+.container-filter--select-input {
+    display: flex;
+    flex-direction: row;
+}
+.container-filter--select {
+    display: flex;
+    flex-direction: column;
+}
+.modal-create .btn {
+    width: 100%;
+}
+.dropdown-menu {
+    width: 92%;
+}
+
+@media (max-width: 1200px) {
+    .filter-select {
+        width: 250px;
+    }
+}
+@media (max-width: 991px) {
+    .container {
+        justify-content: space-between;
+    }
+    .filter-search,
+    .filter-select {
+        width: 170px;
+    }
+    #logIn,
+    #addCard {
+        margin-right: -10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-filter--select-input {
+        flex-direction: column;
+    }
+    .label,
+    .filter-select {
+        margin-right: 20px;
+    }
+    #logIn,
+    #addCard {
+        margin-right: 0;
+    }
+}
+@media (max-width: 560px) {
+    .container {
+        justify-content: space-between;
+    }
+    .container-filter--select-all {
+        flex-direction: column;
+    }
+    .label,
+    #search,
+    #logIn,
+    #addCard,
+    .filter-select {
+        margin-right: 0;
+    }
+    #search {
+        margin-top: 20px;
+    }
+    #logIn,
+    #addCard,
+    #search,
+    .filter-search,
+    .filter-select  {
+        width: 180px;
+    }
+}
+
+@media (max-width: 455px) {
+    .container {
+        padding-bottom: 10px;
+    }
+    .container.fluid,
+    .container-filter {
+        flex-direction: column;
+    }
+    .filter-search {
+        margin: 4px 0 0 0;
+    }
+    #search {
+        margin-top: 14px;
+    }
+    .label {
+        margin-right: 0;
+    }
+}
